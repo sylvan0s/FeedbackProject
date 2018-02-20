@@ -5,12 +5,12 @@ namespace FeedBackBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-class DefaultController extends Controller
+class IndexController extends Controller
 {
     /**
-     * @Route("/test", name="test")
+     * @Route("/", name="homepage")
      */
-    public function testAction()
+    public function indexAction()
     {
         return $this->render('@FeedBack/Default/index.html.twig');
     }
